@@ -14,8 +14,19 @@ I have also created new factor feature variables which divides the data points i
 * Year and Month (Both converted into a single year_part factor variable)
 * Day_type is a factor variable which tells whether the day was a working day, holiday or a weekend holiday
 
-Then I have used the randomForest function from the randomForest library to predict the count values. Before predicting the count 
-
-values in the train data are converted into their log values to limit the range of the data to be predicted.
+Then I have used the randomForest function from the randomForest library to predict the count values.
 
 The predicted data value is then written into the output.csv file 
+
+library used :
+
+* rpart
+* library(rattle)
+* library(rpart.plot)
+* library(RColorBrewer)
+* library(randomForest)
+* library(e1071)
+
+To run, type source("130010006.R") in R console.
+
+Both the train and test datasets should be in the same folder as the R file
